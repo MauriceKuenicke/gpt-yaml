@@ -1,3 +1,9 @@
+---
+hide:
+  - toc
+  - footer
+---
+
 <p align="center">
     <em>Defining Open AI Prompts using YAML Syntax.</em>
 </p>
@@ -48,3 +54,5 @@ model = prompt.model
 messages = prompt.messages
 openai.ChatCompletion.create(model=model, messages=messages)
 ```
+
+

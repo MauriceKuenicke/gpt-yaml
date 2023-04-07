@@ -1,0 +1,7 @@
+model: "gpt-3.5-turbos"
+settings:
+  top_p: 1
+  temperature: -5
+  choices: 1
+prompt:
+  message: Where was it played?
