@@ -51,7 +51,7 @@ jobs:
       #----------------------------------------------
       - name: Run Pre-Commit Hooks
         run: |
-          pre-commit run --all-files
+          poetry run pre-commit run --all-files
 
   test:
     needs: pre-commit
