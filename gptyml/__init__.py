@@ -1,1 +1,1 @@
-from .gptyml import testfunction
+from .gptyml import testfunction  # NOQA
