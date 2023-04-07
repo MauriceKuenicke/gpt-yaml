@@ -1,0 +1,11 @@
+model: "gpt-3.5-turbo"
+settings:
+  top_p: 1
+  temperature: 1
+  choices: 1
+prompt:
+  system: You are a helpful assistant.
+  context:
+    - Who won the world series in 2020?
+    - The Los Angeles Dodgers won the World Series in 2020.
+  message: Where was it played?

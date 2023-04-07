@@ -1,0 +1,95 @@
+# Project information
+site_name: GPT-YAML
+site_url: https://mauricekuenicke.github.io/gpt-yaml/
+site_author: Maurice Künicke
+edit_uri: edit/main/docs/
+
+# Repository
+repo_name: MauriceKuenicke/gpt-yaml
+repo_url: https://github.com/MauriceKuenicke/gpt-yaml
+
+# Configuration
+theme:
+  name: material
+
+  palette:
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: lime
+      accent: lime
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: lime
+      accent: lime
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+
+  font:
+    text: Roboto
+    code: Roboto Mono
+
+  features:
+    - navigation.tracking
+    - navigation.sections
+    - toc.integrate
+    - navigation.top
+    - search.highlight
+    - search.share
+    - announce.dismiss
+    - navigation.footer
+    - content.action.edit
+    - content.action.view
+    - content.code.copy
+    - content.code.annotate
+
+# Customization
+extra:
+  social:
+      - icon: fontawesome/brands/github
+        link: https://github.com/MauriceKuenicke
+
+# Page Tree
+nav:
+  - Home: index.md
+
+# Plugins
+plugins:
+  - search
+  - tags
+
+markdown_extensions:
+  # Python Markdown
+  - abbr
+  - admonition
+  - footnotes
+  - md_in_html
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tabbed:
+      alternate_style: true
+  - toc:
+      permalink: true
+
+  # Python Markdown Extensions
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+
+extra_css:
+  - css/termynal.css
+  - css/custom.css
+extra_javascript:
+  - js/termynal.js
+  - js/custom.js

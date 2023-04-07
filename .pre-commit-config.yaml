@@ -18,7 +18,7 @@ repos:
     rev: 6.1.1
     hooks:
     -   id: pydocstyle
-        args: ['--ignore=D107,D204,D213,D100,D104,D407,D406']
+        args: ['--ignore=D107,D204,D213,D100,D104,D407,D406,D203,D212']
 
 -   repo: https://github.com/pre-commit/mirrors-mypy
     rev: 'v1.1.1'
