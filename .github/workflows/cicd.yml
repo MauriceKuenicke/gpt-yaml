@@ -100,8 +100,7 @@ jobs:
       #----------------------------------------------
       - name: Test with Pytest And Generate Coverage Report
         run: |
-          pip install pytest pytest-cov
-          python -m pytest --junitxml=junit/test-results.xml --cov=gptyml --cov-report=xml --cov-report=html
+          poetry run pytest --junitxml=junit/test-results.xml --cov=gptyml --cov-report=xml --cov-report=html
       - name: Upload coverage reports to Codecov
         uses: codecov/codecov-action@v3
 
